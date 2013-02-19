@@ -5,7 +5,7 @@ r=2;        % rank of *each* subspace
 k=3;        % number of subspaces
 c=0;        % mean shift of subspaces
 kr=k*r;     % sum of ranks
-d=10;   % ambient dimension
+d=10;       % ambient dimension
 if d<kr, display('dim is too small'), break, end;
 
 %% generate data

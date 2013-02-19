@@ -1,4 +1,4 @@
-clc; clear; close all;
+clc; clear; %close all;
 % constants
 n = 100;
 d = 2;
@@ -20,9 +20,9 @@ lambda = 1;
 stepsize = 20;
 numsteps = 100;
 
-[xhat, muhat, tauhat, cost] = gradientSearchNOPCA(P, d, numClusts, lambda, stepsize, numsteps);
-figure; plot(cost')
-mumu(tauhat==1,:)=repmat(muhat(1,:),sum(tauhat==1),1);
-mumu(tauhat==2,:)=repmat(muhat(2,:),sum(tauhat==2),1);
-cost1=norm(xhat-mumu,'fro')^2
-cost2=norm(A-xhat*xhat','fro')^2
+% [xhat, muhat, tauhat, cost] = gradientSearchNOPCA(P, d, numClusts, lambda, stepsize, numsteps);
+% figure; plot(cost')
+% mumu(tauhat==1,:)=repmat(muhat(1,:),sum(tauhat==1),1);
+% mumu(tauhat==2,:)=repmat(muhat(2,:),sum(tauhat==2),1);
+% cost1=norm(xhat-mumu,'fro')^2
+% cost2=norm(A-xhat*xhat','fro')^2
